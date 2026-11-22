@@ -27,8 +27,7 @@ jobs:
           arduino-cli lib install "SD"
           arduino-cli lib install "Servo"
           arduino-cli lib install "Stepper"
-          arduino-cli lib install "Wire"
-          arduino-cli lib install "SPI"
+          # Wire dan SPI sudah built-in, jangan di-install ulang
           
       - name: Install Custom Audio Library
         run: |
