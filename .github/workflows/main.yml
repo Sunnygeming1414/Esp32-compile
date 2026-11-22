@@ -23,10 +23,10 @@ jobs:
             --fqbn esp32:esp32:makergo_c3_supermini \
             --build-property build.partitions=huge_app \
             --output-dir ./build \
-            audio.ino
+            Esp32-compile.ino
             
       - name: Upload Binary Artifact
         uses: actions/upload-artifact@v4
         with:
-          name: esp32-c3-audio-bin
+          name: Esp32-compile.bin
           path: ./build/*.bin
