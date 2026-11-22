@@ -41,6 +41,7 @@ jobs:
           arduino-cli compile \
             --fqbn esp32:esp32:makergo_c3_supermini \
             --build-property build.partitions=huge_app \
+            --build-property upload.maximum_size=3145728 \
             --output-dir ./build \
             Esp32-compile.ino
             
